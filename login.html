@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - BlanchiPro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">BlanchiPro</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="espace-pro.html">Espace Pro</a>
+        <a href="login.html" class="active">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="card" style="max-width:500px; margin:0 auto;">
+      <h1 class="section-title" style="font-size:1.8rem;">Connexion</h1>
+
+      <div class="login-tabs">
+        <button class="login-tab active" data-target="clientForm">Client</button>
+        <button class="login-tab" data-target="proForm">Professionnel</button>
+      </div>
+
+      <form id="clientForm" class="login-form">
+        <div class="form-group">
+          <label for="emailClient">Email</label>
+          <input type="email" id="emailClient" placeholder="client@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="passwordClient">Mot de passe</label>
+          <input type="password" id="passwordClient" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Se connecter</button>
+        <p style="margin-top:12px; text-align:center;">Pas encore de compte ? <a href="#" style="color:var(--primary);">Créer un compte</a></p>
+      </form>
+
+      <form id="proForm" class="login-form hidden">
+        <div class="form-group">
+          <label for="emailPro">Email professionnel</label>
+          <input type="email" id="emailPro" placeholder="pro@blanchisserie.com" required>
+        </div>
+        <div class="form-group">
+          <label for="passwordPro">Mot de passe</label>
+          <input type="password" id="passwordPro" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Accéder à l'espace pro</button>
+        <p style="margin-top:12px; text-align:center;">Espace réservé aux professionnels.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BlanchiPro - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
