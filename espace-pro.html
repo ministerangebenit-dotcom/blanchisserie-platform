@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace Professionnel - BlanchiPro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">BlanchiPro</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="espace-pro.html" class="active">Espace Pro</a>
+        <a href="login.html" class="btn btn-outline">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="dashboard">
+      <aside class="sidebar">
+        <h3>Tableau de bord</h3>
+        <a href="#" class="active">📊 Vue d'ensemble</a>
+        <a href="#">📅 Réservations</a>
+        <a href="#">👥 Clients</a>
+        <a href="#">🧺 Prestations</a>
+        <a href="#">💳 Paiements</a>
+        <a href="#">📋 Planning</a>
+      </aside>
+
+      <section class="dashboard-main">
+        <h1>Vue d'ensemble</h1>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="number">24</div>
+            <div class="label">Réservations</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">18</div>
+            <div class="label">Clients actifs</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">6</div>
+            <div class="label">Prestations en cours</div>
+          </div>
+          <div class="stat-card">
+            <div class="number">1 250 €</div>
+            <div class="label">Revenus du mois</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Dernières réservations</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>N° commande</th>
+                  <th>Client</th>
+                  <th>Service</th>
+                  <th>Date</th>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CMD-2024-001</td>
+                  <td>Claudia Okemaya</td>
+                  <td>Lavage + Repassage</td>
+                  <td>19/08/2026</td>
+                  <td><span class="badge badge-success">Confirmée</span></td>
+                </tr>
+                <tr>
+                  <td>CMD-2024-002</td>
+                  <td>Jean Dupont</td>
+                  <td>Nettoyage à sec</td>
+                  <td>20/08/2026</td>
+                  <td><span class="badge badge-warning">En attente</span></td>
+                </tr>
+                <tr>
+                  <td>CMD-2024-003</td>
+                  <td>Marie Martin</td>
+                  <td>Service à domicile</td>
+                  <td>21/08/2026</td>
+                  <td><span class="badge badge-info">Planifiée</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:24px;">
+          <h3>Planning de la semaine</h3>
+          <p>📅 Planning des interventions à domicile et des collectes.</p>
+          <div style="background:#F1F5F9; padding:20px; border-radius:8px; text-align:center; color:#64748B;">
+            [Aperçu du planning interactif - à connecter au backend]
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BlanchiPro - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
