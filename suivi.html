@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi de commande - BlanchiPro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">BlanchiPro</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="suivi.html" class="active">Suivi</a>
+        <a href="espace-pro.html">Espace Pro</a>
+        <a href="login.html" class="btn btn-outline">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title">Suivi de commande</h1>
+    <div class="card" style="max-width:700px; margin:0 auto;">
+      <div class="form-group">
+        <label for="orderId">Numéro de commande</label>
+        <input type="text" id="orderId" value="CMD-2024-001" readonly>
+      </div>
+
+      <div class="steps" id="stepsContainer">
+        <div class="step done">
+          <div class="step-dot">✓</div>
+          <div class="step-label">Commande reçue</div>
+        </div>
+        <div class="step active">
+          <div class="step-dot">2</div>
+          <div class="step-label">En cours de lavage</div>
+        </div>
+        <div class="step">
+          <div class="step-dot">3</div>
+          <div class="step-label">Séchage / Repassage</div>
+        </div>
+        <div class="step">
+          <div class="step-dot">4</div>
+          <div class="step-label">Prête / En livraison</div>
+        </div>
+        <div class="step">
+          <div class="step-dot">5</div>
+          <div class="step-label">Livrée</div>
+        </div>
+      </div>
+
+      <p style="margin-top:20px;">
+        Votre commande <strong>CMD-2024-001</strong> est actuellement en cours de lavage.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BlanchiPro - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
