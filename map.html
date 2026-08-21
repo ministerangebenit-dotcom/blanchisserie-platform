@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trouver une blanchisserie - BlanchiPro</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">BlanchiPro</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="map.html" class="active">Carte</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="suivi.html">Suivi</a>
+        <a href="espace-pro.html">Espace Pro</a>
+        <a href="login.html" class="btn btn-outline">Connexion</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="map-page">
+    <!-- Sidebar -->
+    <aside class="map-sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>Blanchisseries</h2>
+        <button class="close-sidebar" id="closeSidebar">✕</button>
+      </div>
+
+      <!-- Recherche -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Rechercher par nom ou quartier...">
+      </div>
+
+      <!-- Filtres -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="lavage">Lavage</button>
+        <button class="filter-btn" data-filter="repassage">Repassage</button>
+        <button class="filter-btn" data-filter="pressing">Pressing</button>
+        <button class="filter-btn" data-filter="domicile">À domicile</button>
+      </div>
+
+      <!-- Liste des blanchisseries -->
+      <div class="blanchisseries-list" id="listContainer">
+        <!-- Rempli par JavaScript -->
+      </div>
+    </aside>
+
+    <!-- Carte -->
+    <div class="map-container" id="map"></div>
+
+    <!-- Bouton pour ouvrir la sidebar sur mobile -->
+    <button class="open-sidebar" id="openSidebar">☰ Liste</button>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  
+  <script src="js/map-data.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
